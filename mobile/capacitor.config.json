@@ -1,0 +1,9 @@
+{
+  "appId": "com.bullishbrief.ai",
+  "appName": "BullishBrief AI",
+  "webDir": "www",
+  "server": {
+    "url": "https://YOUR-DEPLOYED-SERVICE.onrender.com",
+    "cleartext": false
+  }
+}

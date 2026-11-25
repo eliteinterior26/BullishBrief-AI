@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b1220">
+  <title>BullishBrief AI</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <div class="brand">📈 BullishBrief AI</div>
+  <div id="market" class="pill">Checking market…</div>
+</header>
+<main>
+  <section class="hero">
+    <h1>Company Intelligence</h1>
+    <p>Research, fundamentals, dividends, news and technical analysis.</p>
+    <div class="search">
+      <input id="symbol" value="RELIANCE" placeholder="NSE symbol e.g. RELIANCE">
+      <button id="searchBtn">Analyse</button>
+    </div>
+    <small id="clock">Connecting…</small>
+  </section>
+  <div id="message" class="message">Enter an NSE symbol and tap Analyse.</div>
+  <section id="company" class="hidden">
+    <div class="company-head card">
+      <div><h2 id="companyName">—</h2><p id="companyMeta">—</p></div>
+      <div class="verdict" id="verdict">—</div>
+      <div class="score-wrap"><span id="overall">—</span><small>Overall / 10</small></div>
+    </div>
+    <nav id="tabs">
+      <button class="tab active" data-tab="overview">Overview</button>
+      <button class="tab" data-tab="fundamentals">Fundamentals</button>
+      <button class="tab" data-tab="technical">Technical</button>
+      <button class="tab" data-tab="dividends">Dividends</button>
+      <button class="tab" data-tab="news">News</button>
+      <button class="tab" data-tab="scores">Scores</button>
+    </nav>
+    <div id="panel" class="card"></div>
+  </section>
+  <footer>Research only • Data may be delayed or incomplete • Not a trading recommendation</footer>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>
